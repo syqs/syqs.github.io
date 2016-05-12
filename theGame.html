@@ -1,19 +1,102 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="game.js "></script>
-    <script src="model.js "></script>
+<meta charset="UTF-8">
+<title>the name of the game</title>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="animate.css" rel="stylesheet"  />
-    <link href="style.css" rel="stylesheet"  />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/ripples.min.css" />
+<!-- <link rel="stylesheet" href="css/animate.css" /> -->
+<link rel="stylesheet" href="css/bootstrap-material-design.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/ripples.min.js"></script>
+
+<script src="js/customJquery.js"></script>
+<script src="js/model.js "></script>
+<script src="js/game.js "></script>
 </head>
 <body>
+<div class="fixed-top d2">
+    <nav id="Navbar" class="navbar navbar-default dark-primary-color" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand light-primary-color" href="#">theName</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">we can change this text periodically...</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#complete-dialog" class="btn-round">Action</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <div class="row">
+            <h1 class="primary-text-color">Fiendishly clever javascript code</h1>
+        </div>
+        <div class="row">
+            <div>
+              <img class="rock" width="240" src="img/theRock.jpg" style="float:left;" >
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="dialogs">
+  <div id="complete-dialog" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close btn-large" data-dismiss="modal" aria-hidden="true" >&times;</button>
+          <h3 class="modal-title">Welcome valued User</h3>
+        </div>
+        <div class="modal-body">
+          <p>Fore aut non quem incididunt, varias reprehenderit deserunt quem offendit,
+            cillum proident ne reprehenderit, quem ad laborum, quo possumus praetermissum,
+            si ne illustriora, hic appellat coniunctione, do labore aliqua quo probant. In
+            probant voluptatibus quo mentitum est laboris. Quorum mandaremus graviterque.
+            Mentitum id velit, dolor aut litteris, ea varias illustriora, ita commodo ita
+            ingeniis, iis nulla appellat incurreret, aut irure amet summis pariatur ita ubi
+            quis dolore veniam proident, consequat sed ingeniis.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+
+</footer>
+</body>
+<!-- <body>
   <div id="main" class="container">
   <h1 class="first animated zoomInUp">Hello friendly gamer person</h1>
   <a href="#" class="button rock"><img style="width:250px"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Glacier_park1.jpg/1280px-Glacier_park1.jpg"></a>
   <button class="animated ZoomInUp hello">"eh.. Hello program... >_>"</button>
   <button class="hidden q1">tada!</button>
 </div>
-</body>
+</body> -->
 </html>
