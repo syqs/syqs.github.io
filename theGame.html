@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width">
-<title>the name of the game</title>
+<title>RPS++</title>
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -37,15 +37,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand light-primary-color" href="#">theName</a>
+                <a class="navbar-brand light-primary-color" href="#">RPS++</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">we can change this text periodically...</a></li>
+                    <li><a href="#" id="winloss">we can change this text periodically...</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#complete-dialog" class="btn-round">Action</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#complete-dialog" class="btn-round">Pick Random</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -56,17 +56,58 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 col-lg-12">
         <div class="row">
-            <h1 class="primary-text-color txt">Fiendishly clever javascript code</h1>
+            <h1 class="primary-text-color txt">Make your choice user</h1>
         </div>
         <div class="row">
+            <!-- <div>
+              <a href="#"><img class="rock myClass" src="https://duckduckgrayduck.files.wordpress.com/2014/04/the-rock.jpg"></a>
+            </div> -->
             <div>
-              <a href="#"><img class="rock" width="240" src="img/theRock.jpg" style="float:left;" ></a>
+              <a href="#"><img class="rock myClass" src="http://i.giphy.com/Af6dsiJBh21qg.gif"></a>
+            </div>
+            <div>
+              <a href="#"><img class="paper myClass" src = "http://4vector.com/thumb_data/v4l-124450.jpg"></a>
+            </div>
+            <div>
+              <a href="#"><img class="scissors myClass" src = "http://toolguyd.com/blog/wp-content/uploads/2014/06/Milwaukee-Scissors-48-22-4041.jpg"></a>
+            </div>
+            <div>
+              <a href="#"><img class="lizard myClass" src = "http://img.enkivillage.com/s/upload/images/2014/12/1d8befa99eab68876f2628100503d281.jpg"></a>
+            </div>
+            <div>
+              <a href="#"><img class="spock myClass" src = "http://i.giphy.com/6RoUMn34pqvcs.gif"></a>
+            </div>
+            <div>
+              <a href="#"><img class="goku myClass" src = "http://orig04.deviantart.net/9199/f/2009/108/4/d/my_evil_goku_by_jxc1013.jpg"></a>
+            </div>
+            <div>
+              <a href="#"><img class="zan myClass" src = "http://s32.postimg.org/ljxhpskw5/zan.jpg"></a>
             </div>
         </div>
         <div class="row">
             <div>
+              <!--
+              var paper = <img src = ‘http://4vector.com/thumb_data/v4l-124450.jpg' height = '100' width = '100’>
 
-            </div>
+              <button type=‘button’>paper</button>
+
+              var scissors= <img src = ‘http://toolguyd.com/blog/wp-content/uploads/2014/06/Milwaukee-Scissors-48-22-4041.jpg' height = '100’ width = ‘100’>
+
+              <button type=‘button’>scissors</button>
+
+              var lizard= <img src = ‘http://img.enkivillage.com/s/upload/images/2014/12/1d8befa99eab68876f2628100503d281.jpg' height = '100’ width = '100’>
+
+              <button type='button'>lizard</button>
+
+              var spock = <img src = ‘http://images6.fanpop.com/image/photos/34600000/Sock-Zachary-Quinto-zachary-quintos-spock-34677934-1800-2293.jpg' height =‘100’ width =‘100’>
+
+              <button type=‘button’>spock</button>
+
+              var goku= <img src =‘http://orig04.deviantart.net/9199/f/2009/108/4/d/my_evil_goku_by_jxc1013.jpg' height=‘100’ width=‘100’>
+
+              <button type=‘button’>goku</button>
+             -->
+          </div>
         </div>
       </div>
     </div>
@@ -84,6 +125,7 @@
           <p>hello</p>
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-primary clear" data-dismiss="modal">Clear Queue</button>
           <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
         </div>
       </div>
@@ -94,12 +136,5 @@
 
 </footer>
 </body>
-<!-- <body>
-  <div id="main" class="container">
-  <h1 class="first animated zoomInUp">Hello friendly gamer person</h1>
-  <a href="#" class="button rock"><img style="width:250px"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Glacier_park1.jpg/1280px-Glacier_park1.jpg"></a>
-  <button class="animated ZoomInUp hello">"eh.. Hello program... >_>"</button>
-  <button class="hidden q1">tada!</button>
-</div>
-</body> -->
+
 </html>

@@ -75,3 +75,11 @@ h1.first {
   animation-duration:0.5s;
   -webkit-animation-delay:2s;
 }
+.myClass {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+
+}

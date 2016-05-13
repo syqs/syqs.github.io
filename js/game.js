@@ -4,8 +4,7 @@ $(document).ready(function(){
 
   $('.materialboxed').materialbox();
   $.material.init();
-  $('img').addClass('d1')
-
+  $('img').addClass('d1');
 
   var synth = window.speechSynthesis;
   // var inputTxt = document.querySelector('.txt');
@@ -14,6 +13,9 @@ $(document).ready(function(){
   var voiceSelect = "native" ||"Google 日本語";
 
   var voices = synth.getVoices();
+
+  var winCount = 0;
+  var lossCount = 0;
 
   function populateVoiceList() {
     voices = synth.getVoices();
@@ -55,6 +57,9 @@ $(document).ready(function(){
     synth.speak(utterThis);
   }
 
+function incrCounter(counter) {
+    counter = counter + 1;
+}
 
   function theJudge(computerChoice, userChoice){
       // had some issuess introduced this variable for a quick fix might not be necessary :: TODO
@@ -66,7 +71,7 @@ $(document).ready(function(){
         //print out to screen that its a tie :: TODO
         // voice it out to the user  :: TODO
         // start next order of bussiness :: TODO
-        $('.txt').text("a tie? every one gets imaginary points this round, Muahahahaha ")
+        $('.txt').text("A tie?! Every one gets imaginary points this round, Muahahahaha!!! ");
 
       }else if(choices[userChoice] === undefined){
         alert("Your choice was not based in wisdom <3");
@@ -84,13 +89,15 @@ $(document).ready(function(){
         if(victory) {
           // since there was a property with the name of the value for the computerChoice in the defeats object nested within our property
           // we can anounce the winner
-          $('.txt').text("The Vitory! " + userChoice.name + " " + userChoice.defeats[computerChoice2.name.toLowerCase()] + " " + computerChoice2.name + "!");
+          $('.txt').text("The Victory! " + userChoice.name + " " + userChoice.defeats[computerChoice2.name.toLowerCase()] + " " + computerChoice2.name + "!");
+          winCount++;
         }else{
           // or the loserino
           $('.txt').text("The Defeat! " + computerChoice2.name + " " + computerChoice2.defeats[userChoice.name.toLowerCase()] + " " + userChoice.name + "!");
-
+          lossCount++;
         }
       }
+      $('#winloss').text(winCount + ' Wins and ' + lossCount + ' losses');
    }
 
 
@@ -128,8 +135,51 @@ $(document).ready(function(){
     // we need to prevent default onclick behaviour :: TODO
     setTimeout( start(0, 'rock'),0);
     inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
-    onSubmit(e)
+    onSubmit(e);
   });
+  $('.paper').on('click', function(e) {
+
+    // we need to prevent default onclick behaviour :: TODO
+    setTimeout( start(0, 'paper'),0);
+    inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
+    onSubmit(e);
+  });
+  $('.scissors').on('click', function(e) {
+
+    // we need to prevent default onclick behaviour :: TODO
+    setTimeout( start(0, 'scissors'),0);
+    inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
+    onSubmit(e);
+  });
+  $('.lizard').on('click', function(e) {
+
+    // we need to prevent default onclick behaviour :: TODO
+    setTimeout( start(0, 'lizard'),0);
+    inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
+    onSubmit(e);
+  });
+  $('.spock').on('click', function(e) {
+
+    // we need to prevent default onclick behaviour :: TODO
+    setTimeout( start(0, 'spock'),0);
+    inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
+    onSubmit(e);
+  });
+  $('.goku').on('click', function(e) {
+
+    // we need to prevent default onclick behaviour :: TODO
+    setTimeout( start(0, 'goku'),0);
+    inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
+    onSubmit(e);
+  });
+  $('.zan').on('click', function(e) {
+    // we need to prevent default onclick behaviour :: TODO
+    setTimeout( start(0, 'zan'),0);
+    inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
+    onSubmit(e);
+  });
+
+
 
   // n is the number of game level deciding which parametars to call theJudge function with
   function start(n, userChoice){
@@ -140,7 +190,7 @@ $(document).ready(function(){
       // var userChoice2 = theUserChoice(choices2);
       // computerChoice = theChoice(choices2);
       // theJudge(computerChoice, userChoice2, choices2);
-      console.log('playing game 2')
+      console.log('playing game 2');
     }else{
       // made userChoice === 'rock' for testing :: TODO
       computerChoice = theChoice(choices);
@@ -149,7 +199,7 @@ $(document).ready(function(){
       theJudge(computerChoice, userChoice);
     }
 
-  };
+  }
 
 
 

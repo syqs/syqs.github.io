@@ -3,8 +3,9 @@
     paper: {name: "Paper", defeats: {rock:  "covers", spock: "disproves"}},
     scissors: {name: "Scissors", defeats:{paper : "cuts", lizard: "decapitates"}},
     lizard: {name: "Lizard", defeats:{paper: "eats", spock: "poisons"}},
-    spock: {name: "Spock", defeats:{scissors : "smashes",rock : "vaporises", goku:"teaches the vulcan nerv pinch technique to"}},
+    spock: {name: "Spock", defeats:{zan: "teaches the ultimate logic to",scissors : "smashes",rock : "vaporises", goku:"Teaches the Vulcan Nerv Pinch technique to",}},
     goku: {name: "Goku", defeats:{paper:"evaporates", rock:"slices", lizard:"become friends with", scissors:"laughs as"}},
+    zan: {name: "Zan", defeats: {paper:"recycles", rock:"gets a new workout partner:", lizard: "tames", scissors: "doesn't need"}},
     key: function(n) {
         return this[Object.keys(this)[n]];
     },
