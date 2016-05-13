@@ -11,7 +11,7 @@ $(document).ready(function(){
   // var inputTxt = document.querySelector('.txt');
 
   var inputTxt = document.querySelector('.txt').childNodes[0].nodeValue;
-  var voiceSelect =  "Google 日本語";
+  var voiceSelect = "native" ||"Google 日本語";
 
   var voices = synth.getVoices();
 
