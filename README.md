@@ -1,6 +1,6 @@
-## Simple rock paper scissors game with a fancy UI
+# Simple rock paper scissors game with a fancy UI
 
-# Libraries used:
+## Libraries used:
 - bootstrap
 - jQuery
 - materializeCSS
@@ -8,5 +8,5 @@
 - ripples.js
 - animateCSS <- curently unused
 
-# Tools developed for the app:
+## Tools developed for the app:
 - simple text to speach api
