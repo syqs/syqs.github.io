@@ -24,40 +24,6 @@
     level: 2
   };
 
-function theJudge(computerChoice, userChoice){
-    // had some issuess introduced this variable for a quick fix might not be necessary :: TODO
-    var computerChoice2 = {};
-
-    // if it is a tie or undefined :: take care of that first
-    if(computerChoice == userChoice){
-      alert("a tie? ");
-      //print out to screen that its a tie :: TODO
-      // voice it out to the user  :: TODO
-      // start next order of bussiness :: TODO
-
-    }else if(choices[userChoice] === undefined){
-      alert("Your choice was not based in wisdom <3");
-      // print out to screen that its a tie :: TODO
-      // voice it out to the user :: TODO
-      // start next order of bussiness :: TODO
-    }else{
-      // make userChoice an object
-      userChoice = choices[userChoice];
-      // returns true or false if property exists on the object
-      var victory = userChoice.defeats[computerChoice] !== undefined;
-      // make computerChoice an object
-      computerChoice2 = choices[computerChoice];
-      // If there is vicotry that is !undefined
-      if(victory) {
-        // since there was a property with the name of the value for the computerChoice in the defeats object nested within our property
-        // we can anounce the winner
-          alert("The Vitory! " + userChoice.name + " " + userChoice.defeats[computerChoice2.name.toLowerCase()] + " " + computerChoice2.name + "!");
-      }else{
-        // or the loserino
-          alert("The Defeat! " + computerChoice2.name + " " + computerChoice2.defeats[userChoice.name.toLowerCase()] + " " + userChoice.name + "!");
-      }
-    }
- }
 
  // Computer choice needs refactoring
  function theChoice(theObject){
