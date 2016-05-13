@@ -62,10 +62,11 @@ $(document).ready(function(){
 
       // if it is a tie or undefined :: take care of that first
       if(computerChoice == userChoice){
-        alert("a tie? ");
+
         //print out to screen that its a tie :: TODO
         // voice it out to the user  :: TODO
         // start next order of bussiness :: TODO
+        $('.txt').text("a tie? every one gets imaginary points this round, Muahahahaha ")
 
       }else if(choices[userChoice] === undefined){
         alert("Your choice was not based in wisdom <3");
