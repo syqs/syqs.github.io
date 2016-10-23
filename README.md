@@ -1,5 +1,7 @@
 # Simple rock paper scissors game with a fancy UI
 
+Demo [http://syqs.github.io/][http://syqs.github.io/]
+
 ## Libraries used:
 - bootstrap
 - jQuery
